@@ -1,0 +1,127 @@
+{
+    "alert": {
+        "created": "2024-06-06T08:58:13.348Z",
+        "kind": "alert",
+        "level": "high"
+    },
+    "ams": {
+        "suppressed": false
+    },
+    "event": {
+        "code": 1,
+        "created": "2024-06-06T06:21:47.212Z",
+        "host": "BGLAB002W10003",
+        "uuid": "67373d28-5749-4287-ad92-bf685ab75f86"
+    },
+    "falsepositives": [
+        "Unknown"
+    ],
+    "observables": {
+        "destination": {
+            "domain": null,
+            "ip": null,
+            "port": null
+        },
+        "dns": {
+            "question": {
+                "name": null
+            }
+        },
+        "event": {
+            "action": "Process creation",
+            "category": [
+                "process"
+            ],
+            "channel": "sysmon",
+            "code": 1,
+            "type": [
+                "start"
+            ]
+        },
+        "file": {
+            "hash": {
+                "imphash": null,
+                "sha256": null
+            },
+            "name": null,
+            "path": null
+        },
+        "host": {
+            "name": "BGLAB002W10003"
+        },
+        "process": {
+            "command_line": "\"C:\\Users\\Public\\SwiftSearch64.exe\"",
+            "executable": "C:\\Users\\Public\\SwiftSearch64.exe",
+            "hash": {
+                "imphash": null,
+                "sha256": "7240d73e6272ec63a155f1d024ef5b9801a6342e7da8b7e80e076ffea9ff63e8"
+            },
+            "name": "SwiftSearch64.exe",
+            "parent": {
+                "command_line": "C:\\Windows\\Explorer.EXE",
+                "executable": "C:\\Windows\\explorer.exe",
+                "name": "explorer.exe"
+            },
+            "pe": {
+                "company": null,
+                "description": null,
+                "original_file_name": null,
+                "product": null
+            },
+            "working_directory": "C:\\Users\\Public\\"
+        },
+        "registry": {
+            "path": null,
+            "value": null
+        },
+        "source": {
+            "domain": null,
+            "ip": null,
+            "port": null
+        },
+        "user": {
+            "domain": "BGLAB002",
+            "name": "BGService"
+        },
+        "winlog": {
+            "consumer": null,
+            "eventnamespace": null,
+            "eventtype": null,
+            "filter": null,
+            "grantedaccess": null,
+            "initiated": null,
+            "integritylevel": null,
+            "name": null,
+            "operation": null,
+            "state": null,
+            "targetimage": null,
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            }
+        }
+    },
+    "observables_list": [
+        "NA"
+    ],
+    "observer": {
+        "type": "edr"
+    },
+    "organization": {
+        "id": "d3b6842d"
+    },
+    "rule": {
+        "description": "Detects a suspicious execution from an uncommon folder",
+        "id": "3dfd06d2-eaf4-4532-9555-68aca59f57c4",
+        "name": "Execution from Suspicious Folder"
+    },
+    "tacticidlist": [
+        "TA0005"
+    ],
+    "techniqueidlist": [
+        "T1036"
+    ],
+    "uuid": "fa229266-222c-46da-987d-7ded29a84253"
+}
