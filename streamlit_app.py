@@ -12,7 +12,7 @@ KEYCLOAK_REALM = 'prod2'
 KEYCLOAK_CLIENT_ID = 'streamlit'
 REDIRECT_URI = 'http://localhost:8501'  # Streamlit runs on this by default
 # Directory containing the JSON playbook files
-PLAYBOOKS_DIR = "playbooks/"
+# PLAYBOOKS_DIR = "playbooks/"
 
 # Dictionary to map use case names to their respective JSON files and URLs
 PLAYBOOKS = {
