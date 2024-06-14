@@ -39,7 +39,7 @@ def main():
     # Show the selected JSON file contents
     if use_case != "Select a playbook":
         playbook_info = PLAYBOOKS[use_case]
-        json_file_path = os.path.join(PLAYBOOKS_DIR, playbook_info["file"])
+        json_file_path = playbook_info["file"]
 
         try:
             with open(json_file_path, "r") as json_file:
