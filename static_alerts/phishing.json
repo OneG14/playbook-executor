@@ -1,124 +1,70 @@
 {
-    "alert": {
-    "created": "2024-05-07T12:56:01.846Z",
-    "kind": "alert",
-    "level": "medium"
-  },
-  "event": {
-    "code": 1,
-    "created": "2024-05-07T11:45:18.043Z",
-    "host": "BGLAB002W10005",
-    "uuid": "c5e0f585-0422-4cc7-849b-2f42f457968c"
-  },
-  "falsepositives": [
-    "Unknown"
-  ],
-  "observables": {
-    "destination": {
-      "domain": null,
-      "ip": null,
-      "port": null
+  "alert": {
+  "created": "2024-05-07T12:56:01.846Z",
+  "kind": "alert",
+  "level": "medium"
+},
+"event": {
+  "code": 1,
+  "created": "2024-05-07T11:45:18.043Z",
+  "host": "BGLAB002W10003",
+  "uuid": "c5e0f585-0422-4cc7-849b-2f42f457968c"
+},
+"falsepositives": [
+  "Unknown"
+],
+"observables": {
+  "email":{
+    "from": {
+      "address": "fshaik@blusapphire.com"
     },
-    "dns": {
-      "question": {
-        "name": null
-      }
-    },
-    "event": {
-      "action": "Process creation",
-      "category": [
-        "process"
-      ],
-      "channel": "sysmon",
-      "code": 1,
-      "type": [
-        "start"
-      ]
-    },
-    "file": {
-      "hash": {
-        "imphash": null,
-        "sha256": null
-      },
-      "name": null,
-      "path": null
-    },
-    "host": {
-      "name": "FRSDOR03"
-    },
-    "process": {
-      "command_line": "powershell.exe -NoProfile -EncodedCommand dAB6AHUAdABpAGwAIAAvAGcA",
-      "executable": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-      "hash": {
-        "imphash": null,
-        "sha256": "ba4038fd20e474c047be8aad5bfacdb1bfc1ddbe12f803f473b7918d8d819436"
-      },
-      "name": "powershell.exe",
-      "parent": {
-        "command_line": "\"C:\\Program Files\\Nutanix\\Python36\\python.exe\" \"-c\" \"from multiprocessing.spawn import spawn_main; spawn_main(parent_pid=2268, pipe_handle=1128)\" \"--multiprocessing-fork\"",
-        "executable": "C:\\Program Files\\Nutanix\\Python36\\python.exe",
-        "name": "python.exe"
-      },
-      "pe": {
-        "company": "Microsoft Corporation",
-        "description": "Windows PowerShell",
-        "original_file_name": "PowerShell.EXE",
-        "product": "Microsoft® Windows® Operating System"
-      },
-      "working_directory": "C:\\Program Files\\Nutanix\\Python36\\lib\\site-packages\\win32\\"
-    },
-    "registry": {
-      "path": null,
-      "value": null
-    },
-    "source": {
-      "domain": null,
-      "ip": "107.178.223.183",
-      "port": null
-    },
-    "user": {
-      "domain": "NT AUTHORITY",
-      "name": "fshaik@blusapphire.com"
-    },
-    "winlog": {
-      "consumer": null,
-      "eventnamespace": null,
-      "eventtype": null,
-      "filter": null,
-      "grantedaccess": null,
-      "initiated": null,
-      "integritylevel": null,
-      "name": null,
-      "operation": null,
-      "state": null,
-      "targetimage": null,
-      "user": {
-        "domain": "NT AUTHORITY",
-        "identifier": "S-1-5-18",
-        "name": "SYSTEM",
-        "type": "User"
-      }
+    "sender": {
+      "address": "phish@blusapphire.com"
     }
   },
-  "observables_list": [
-    "NA"
-  ],
-  "observer": {
-    "type": "edr"
+  "event": {
+    "action": "Process creation",
+    "category": [
+      "process"
+    ],
+    "channel": "sysmon",
+    "code": 1,
+    "type": [
+      "start"
+    ]
   },
-  "organization": {
-    "id": "defc0264"
+  "file": {
+    "hash": {
+      "imphash": null,
+      "sha256": null
+    },
+    "name": null,
+    "path": null
   },
-  "rule": {
-    "description": "Commandline to launch powershell with a base64 payload",
-    "id": "fb843269-508c-4b76-8b8d-88679db22ce7",
-    "name": "Suspicious Execution of Powershell with Base64"
+  "host": {
+    "name": "FRSDOR03"
   },
-  "tacticidlist": [
-    "TA0002"
-  ],
-  "techniqueidlist": [
-    "T1059.001"
-  ],
-  "uuid": "e1118d17-6103-4012-8ae3-e72681978379"
+  "user": {
+    "domain": "NT AUTHORITY",
+    "name": "phish@blusapphire.com"
+  }
+},
+"observer": {
+  "type": "edr"
+},
+"organization": {
+  "id": "defc0264"
+},
+"rule": {
+  "description": "Commandline to launch powershell with a base64 payload",
+  "id": "fb843269-508c-4b76-8b8d-88679db22ce7",
+  "name": "Suspicious Execution of Powershell with Base64"
+},
+"tacticidlist": [
+  "TA0002"
+],
+"techniqueidlist": [
+  "T1059.001"
+],
+"uuid": "e1118d17-6103-4012-8ae3-e72681978379"
 }

@@ -16,14 +16,12 @@ PLAYBOOKS_DIR = "playbooks/"
 
 # Dictionary to map use case names to their respective JSON files and URLs
 PLAYBOOKS = {
-    "Phishing": {"file": "phishing.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/95ca7158-3c4e-431f-8826-c488b772fd7f/execute"},
-    "Suspend Process": {"file": "suspicious_process.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/08168258-4f7d-47bb-ad5a-93da5a6da940/execute"},
-    "Suspend Process2": {"file": "suspicious_process2.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/08168258-4f7d-47bb-ad5a-93da5a6da940/execute"},
-    "Clean Process": {"file": "suspicious_process.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/cd683749-622a-4459-98c0-c40b08e58a10/execute"},
-    "Suspicious IP": {"file": "suspicious_ip.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows"},
-    "Suspicious URL": {"file": "suspicious_url.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows"},
-    "System Quarantine": {"file": "system_quarantine.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/8d1b4725-10f3-4c6e-b0ef-0f7761090cbc/execute"},
-    "System Release": {"file": "system_quarantine.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/ae59b574-9d40-48fa-8642-9ad5d284112e/execute"},
+    "Phishing": {"file": "static_alerts/phishing.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/f1d3bba3-a37f-4cff-bf5f-7d4469424cd0/execute"},
+    "Malware": {"file": "static_alerts/malware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/76064176-de12-415f-ac56-d5744abfcdbf/execute"},
+    "Ransomware": {"file": "static_alerts/ransomware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/4db7d402-8ebd-4ea9-907b-17eab0afbbb8/execute"},
+    "Suspicious User Behaviour": {"file": "static_alerts/suspicious_user_behavior.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/95ca7158-3c4e-431f-8826-c488b772fd7f/execute"},
+    "System Quarantine": {"file": "static_alerts/system_quarantine.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/8d1b4725-10f3-4c6e-b0ef-0f7761090cbc/execute"},
+    "System Release": {"file": "static_alerts/system_release.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/ae59b574-9d40-48fa-8642-9ad5d284112e/execute"},
 }
 
 # Function to update timestamps in JSON data
