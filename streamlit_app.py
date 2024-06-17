@@ -45,7 +45,9 @@ def main():
             with open(json_file_path, "r") as json_file:
                 json_data = json.load(json_file)
                 updated_json_data = update_timestamps(json_data)
-                st.json(updated_json_data)
+                # Display JSON content in a collapsible expander
+                with st.expander("Show JSON content"):
+                    st.json(updated_json_data)
             headers = {
                     "Authorization": "Bearer bc5b20bc-8b0c-4351-9fc0-00ae0b0521f1"
                     }
