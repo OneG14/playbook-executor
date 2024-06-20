@@ -16,7 +16,7 @@ REDIRECT_URI = 'http://localhost:8501'  # Streamlit runs on this by default
 
 # Dictionary to map use case names to their respective JSON files and URLs
 PLAYBOOKS = {
-    "Phishing": {"file": "static_alerts/phishing.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/5d06124f-0425-4d47-a336-05a006335021/execute"},
+    # "Phishing": {"file": "static_alerts/phishing.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/5d06124f-0425-4d47-a336-05a006335021/execute"},
     "Malware": {"file": "static_alerts/malware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/35db43b5-588b-4960-a2a1-c099a0364fdc/execute"},
     "Ransomware": {"file": "static_alerts/ransomware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/b37e8d8a-6262-4029-906b-3d4e8b197da4/execute"},
     "Suspicious User Behaviour": {"file": "static_alerts/suspicious_user_behavior.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/addc8e69-091b-427e-abe6-a8fc4c369c54/execute"},
