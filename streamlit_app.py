@@ -16,12 +16,12 @@ REDIRECT_URI = 'http://localhost:8501'  # Streamlit runs on this by default
 
 # Dictionary to map use case names to their respective JSON files and URLs
 PLAYBOOKS = {
-    "Phishing": {"file": "static_alerts/phishing.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/f1d3bba3-a37f-4cff-bf5f-7d4469424cd0/execute"},
-    "Malware": {"file": "static_alerts/malware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/76064176-de12-415f-ac56-d5744abfcdbf/execute"},
-    "Ransomware": {"file": "static_alerts/ransomware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/4db7d402-8ebd-4ea9-907b-17eab0afbbb8/execute"},
-    "Suspicious User Behaviour": {"file": "static_alerts/suspicious_user_behavior.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/95ca7158-3c4e-431f-8826-c488b772fd7f/execute"},
-    "System Quarantine": {"file": "static_alerts/system_quarantine.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/8d1b4725-10f3-4c6e-b0ef-0f7761090cbc/execute"},
-    "System Release": {"file": "static_alerts/system_release.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/ae59b574-9d40-48fa-8642-9ad5d284112e/execute"},
+    "Phishing": {"file": "static_alerts/phishing.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/5d06124f-0425-4d47-a336-05a006335021/execute"},
+    "Malware": {"file": "static_alerts/malware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/35db43b5-588b-4960-a2a1-c099a0364fdc/execute"},
+    "Ransomware": {"file": "static_alerts/ransomware.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/b37e8d8a-6262-4029-906b-3d4e8b197da4/execute"},
+    "Suspicious User Behaviour": {"file": "static_alerts/suspicious_user_behavior.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/addc8e69-091b-427e-abe6-a8fc4c369c54/execute"},
+    "System Quarantine": {"file": "static_alerts/system_quarantine.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/945f9218-8db3-46c4-a73d-774dccd7ddca/execute"},
+    "System Release": {"file": "static_alerts/system_release.json", "url": "https://oneflow.blusapphire.com/api/v1/workflows/7662cc85-33ed-4cdd-8d6f-930b5b2b1951/execute"},
 }
 
 # Function to update timestamps in JSON data
@@ -49,7 +49,7 @@ def main():
                 with st.expander("Show JSON content"):
                     st.json(updated_json_data)
             headers = {
-                    "Authorization": "Bearer bc5b20bc-8b0c-4351-9fc0-00ae0b0521f1"
+                    "Authorization": "Bearer 54cfe3ad-6e3b-4ead-8e20-726963ae9ba0"
                     }
             # Button to send the JSON to the playbook URL
             if st.button(f"Send {use_case} to Playbook"):
