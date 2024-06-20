@@ -8,7 +8,7 @@ from streamlit_keycloak import login
 
 # Keycloak configuration
 KEYCLOAK_SERVER_URL = 'https://bluiam01.blusapphire.com/'
-KEYCLOAK_REALM = 'prod2'
+KEYCLOAK_REALM = 'prod1'
 KEYCLOAK_CLIENT_ID = 'streamlit'
 REDIRECT_URI = 'http://localhost:8501'  # Streamlit runs on this by default
 # Directory containing the JSON playbook files
